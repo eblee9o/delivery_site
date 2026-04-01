@@ -18,6 +18,7 @@ public class Store {
     }
     public Store(Integer id, String name, String category) {
         this.id = id;
+        this.name = name;
         this.category = category;
     }
 

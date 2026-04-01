@@ -40,7 +40,7 @@ public class StoreController {
         this.storeService = storeService;
     }
 
-    @GetMapping("/stores")
+    @GetMapping("/stores1")
     public List<Store> stores(){
         return storeService.getStores();
     };
