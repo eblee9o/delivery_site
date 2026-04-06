@@ -13,34 +13,13 @@
         <th>ID</th>
         <th>가게명</th>
         <th>카테고리</th>
+        <th>주문하기</th>
     </tr>
     </thead>
     <tbody id="storeTableBody">
     </tbody>
 </table>
 
-<script>
-    async function loadStores() {
-        const response = await fetch("/api/stores");
-        const stores = await response.json();
-        const tableBody = document.getElementById("storeTableBody");
-
-        tableBody.innerHTML = "";
-
-        stores.forEach(store => {
-            const row = document.createElement("tr");
-
-            row.innerHTML = `
-                <td>${store.id}</td>
-                <td>${store.name}</td>
-                <td>${store.category}</td>
-            `;
-
-            tableBody.appendChild(row);
-        });
-    }
-
-    loadStores();
-</script>
+<script src="/js/stores.js"></script>
 </body>
 </html>
