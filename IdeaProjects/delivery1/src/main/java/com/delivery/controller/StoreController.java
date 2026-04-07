@@ -29,6 +29,7 @@ public class StoreController {
 
     @GetMapping("/stores")
     public List<Store> stores(){
+        System.out.println("stores 컨트롤러>>>> " );
         return storeService.getStores();
     }
 

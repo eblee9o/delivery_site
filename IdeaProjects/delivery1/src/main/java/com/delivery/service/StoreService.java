@@ -18,6 +18,7 @@ public class StoreService {
 
     //가게 목록 전체를 조회하여 리스트로 반환
     public List<Store> getStores() {
+        System.out.println("stores 서비스 >>>> " );
         //findAll = select * from store
         return storeRepository.findAll();
     }
