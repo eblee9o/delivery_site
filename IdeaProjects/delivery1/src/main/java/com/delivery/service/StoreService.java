@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+//@Service
 public class StoreService {
     //StoreRepository를 이용해 가져온 데이터를 이 서비스 안에서 사용하겠다
     private final StoreRepository storeRepository;
